@@ -1,6 +1,10 @@
 import PortfolioHero from "./components/PortfolioHero";
-import PortfolioPrimarySections, {
-  PortfolioSecondarySections,
+import {
+  AboutSection,
+  BlogSection,
+  ContactSection,
+  ExperienceSection,
+  PricingSection,
 } from "./components/PortfolioInfoSections";
 import PortfolioNavbar from "./components/PortfolioNavbar";
 import ProjectsSection from "./components/ProjectsSection";
@@ -22,10 +26,13 @@ const App = () => {
           error={error}
           onRetry={retry}
         />
-        <PortfolioPrimarySections profile={profile} />
+        <AboutSection profile={profile} />
         <Skills />
+        <ExperienceSection />
         <ProjectsSection />
-        <PortfolioSecondarySections profile={profile} />
+        <PricingSection />
+        <BlogSection />
+        <ContactSection profile={profile} />
       </main>
     </div>
   );
