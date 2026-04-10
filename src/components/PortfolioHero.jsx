@@ -2,7 +2,7 @@ const fallbackProfile = {
   name: "VISHALGOUDA GOUDAR",
   role: "Frontend Developer",
   summary:
-    "Frontend Developer with 2+ years of experience building responsive web applications using React.js, Redux, and JavaScript.",
+    "Frontend Developer with 2+ years of hands-on experience building responsive web applications and dashboards using React.js, Vue.js, Redux, and JavaScript.",
   location: "Belagavi, Karnataka 590016",
   email: "vishalgoudar05@gmail.com",
   phone: "+91-7892660979",

@@ -13,7 +13,7 @@ const projectLinks = [
   },
   {
     link: "https://anektech.com",
-    logoSrc: "https://www.anektech.com/#hero",
+    logoSrc: "https://www.anektech.com/images/anektech-logo.png",
   },
   {
     link: "https://devalayas.com/",
@@ -22,6 +22,14 @@ const projectLinks = [
   {
     link: "https://www.devalayas.in/",
     logoSrc: "https://www.devalayas.in/assets/images/devalaya-logo.png",
+  },
+  {
+    title: "Temple Officer Dashboard",
+    domain: "templeofficerdashboard.netlify.app",
+    link: "https://templeofficerdashboard.netlify.app/",
+    logoSrc: "https://templeofficerdashboard.netlify.app/favicon.ico",
+    description:
+      "Built a temple operations dashboard focused on streamlined administration, responsive workflows, and clear data-driven management screens.",
   },
 ];
 

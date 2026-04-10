@@ -1,7 +1,6 @@
 import PortfolioHero from "./components/PortfolioHero";
 import {
   AboutSection,
-  BlogSection,
   ContactSection,
   ExperienceSection,
   PricingSection,
@@ -31,7 +30,6 @@ const App = () => {
         <ExperienceSection />
         <ProjectsSection />
         <PricingSection />
-        <BlogSection />
         <ContactSection profile={profile} />
       </main>
     </div>

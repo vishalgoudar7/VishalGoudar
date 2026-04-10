@@ -10,7 +10,7 @@ const softSkills = [
 
 const languages = [
   "Kannada (Native)",
-  "English (Professional)",
+  "English (Intermediate)",
   "Hindi (Conversational)",
 ];
 
@@ -18,7 +18,7 @@ const experienceList = [
   {
     role: "Frontend Developer",
     company: "Anek Technologies Pvt Ltd - Belagavi, Karnataka",
-    period: "Dec 2023 - Present",
+    period: "Aug 2024 - Present",
     points: [
       "Developing and maintaining responsive web applications using React.js, Redux, and JavaScript (ES6+).",
       "Integrated AI-powered features into production apps to improve UX and automate workflows.",
@@ -29,7 +29,7 @@ const experienceList = [
   {
     role: "MERN Stack Developer",
     company: "Avishkar Minds Pvt Ltd - Belagavi, Karnataka",
-    period: "May 2023 - Dec 2023",
+    period: "Feb 2024 - Jul 2024",
     points: [
       "Built React.js + Redux UI components for temple listing, search, cart, and checkout in Devalayas.com.",
       "Integrated RESTful APIs for dynamic data fetching and supported secure login/registration flows.",
@@ -52,19 +52,6 @@ const pricingList = [
     name: "Custom",
     price: "Custom Quote",
     desc: "Complex app modules with dashboard workflows and scalable architecture.",
-  },
-];
-
-const blogList = [
-  {
-    title: "AI Features in Frontend Products",
-    excerpt:
-      "How production React apps can safely integrate AI workflows without hurting performance.",
-  },
-  {
-    title: "Using Lazy Loading + Code Splitting",
-    excerpt:
-      "Practical methods I use to reduce initial bundle cost and improve first-load experience.",
   },
 ];
 
@@ -95,11 +82,11 @@ export const AboutSection = ({ profile }) => {
             {name}
           </h3>
           <p className="mt-3 text-slate-300">
-            Frontend Developer with 2+ years of experience building responsive
-            web applications using React.js, Redux, and JavaScript. Skilled in
-            REST API integration, state management, and performance
-            optimization. Familiar with AI-powered feature integration in
-            production apps.
+            Frontend Developer with 2+ years of hands-on experience building
+            responsive web applications and dashboards using React.js, Vue.js,
+            Redux, and JavaScript. Skilled in REST API integration, state
+            management, and performance optimization across production
+            projects.
           </p>
           <p className="mt-4 text-sm text-slate-400">Location: {location}</p>
         </article>
@@ -182,28 +169,6 @@ export const PricingSection = () => (
           </h3>
           <p className="mt-2 text-neon">{plan.price}</p>
           <p className="mt-4 text-sm text-slate-300">{plan.desc}</p>
-        </article>
-      ))}
-    </div>
-  </section>
-);
-
-export const BlogSection = () => (
-  <section id="blog" className={sectionClass}>
-    <SectionHeading
-      title="Blog"
-      subtitle="Insights from day-to-day frontend and product development work."
-    />
-    <div className="grid gap-6 md:grid-cols-2">
-      {blogList.map((post) => (
-        <article
-          key={post.title}
-          className="rounded-2xl border border-white/10 bg-slate-900/70 p-6 shadow-lg shadow-black/30 transition hover:border-neon/60"
-        >
-          <h3 className="font-display text-2xl font-semibold text-slate-100">
-            {post.title}
-          </h3>
-          <p className="mt-3 text-slate-300">{post.excerpt}</p>
         </article>
       ))}
     </div>
@@ -319,7 +284,6 @@ const PortfolioPrimarySections = ({ profile }) => (
 export const PortfolioSecondarySections = ({ profile }) => (
   <>
     <PricingSection />
-    <BlogSection />
     <ContactSection profile={profile} />
   </>
 );
